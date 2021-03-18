@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7DFF6"
+    tools:context=".ActivityContactos">
+
+    <TextView
+        android:id="@+id/textViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Contactos"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="63dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/harrystyles_basel_1_110318" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="69dp"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0E0E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="63dp"
+        android:text="Numero"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewContact"
+        app:layout_constraintStart_toStartOf="@+id/txtEdad"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+    <TextView
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="TextView"
+        android:textColor="#121111"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEdad"
+        app:layout_constraintStart_toStartOf="@+id/txtEdad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContact" />
+
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="55dp"
+        android:text="TextView"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom" />
+
+    <TextView
+        android:id="@+id/txtDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="71dp"
+        android:text="TextView"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum" />
+
+    <ImageButton
+        android:id="@+id/btnLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
